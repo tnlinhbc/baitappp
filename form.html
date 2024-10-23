@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cục thống kê tỉnh Tiền Giang</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <script src="main.js"></script>
+    <!-- header -->
+    <div class="header">
+        <div class="header__banner">
+            <img src="./img/banner.jpg" alt="Cục thống kê tỉnh Tiền Giang">
+        </div>
+        <div class="header__menu">
+            <ul>
+                <li><a href="./index.html">Trang chủ</a></li>
+                <li><a href="./update.html">Báo cáo thi đua</a></li>
+                <li><a href="./update.html">Thuật ngữ thống kê</a></li>
+                <li><a href="./form.html">Liên hệ - góp ý</a></li>
+                <li><a href="./update.html">Hỏi đáp & hỗ trợ</a></li>
+                <li><a href="./update.html">Quản trị</a></li>
+            </ul>
+        </div>
+        <div class="header__wellcome">
+            <marquee direction="left">"CÁN BỘ, CÔNG CHỨC, NGƯỜI LAO ĐỘNG CỤC THỐNG KÊ TỈNH TIỀN GIANG SỐNG VÀ LÀM VIỆC
+                THEO HIẾN PHÁP VÀ PHÁP LUẬT"</marquee>
+        </div>
+    </div>
+    <!-- header -->
+    <!-- content -->
+
+    <div class="content">
+        <!-- content-left -->
+        <div class="content__left">
+            <div class="content__left--menu">
+                <ul>
+                    <li><a href="./update.html">Giới thiệu chung</a>
+                        <ul class="content__left--menuchild">
+                            <li><a href="./update.html">Cá nhân</a></li>
+                            <li><a href="./update.html">Đoàn thể</a></li>
+                            <li><a href="./update.html">Tổ chức</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./update.html">Tin tức - Liên hệ</a>
+                        <ul class="content__left--menuchild">
+                            <li><a href="./update.html">Tin tức trong nước</a></li>
+                            <li><a href="./update.html">Tin tức thế giới</a></li>
+                            <li><a href="./update.html">Tin tức giải trí</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./update.html">Thông tin thống kê</a></li>
+                    <li><a href="./update.html">Phương án - Biểu mẫu điền</a></li>
+                    <li><a href="./update.html">Niên giám thống kê</a></li>
+                    <li><a href="./update.html">Công khai dự toán</a></li>
+                    <li><a href="./update.html">Ấn phẩm thông kê</a></li>
+                    <li><a href="./update.html">Pháp chế và tuyên truyền</a></li>
+                </ul>
+            </div>
+            <div class="content__left--img">
+                <img src="./img/dieutradn.png" alt="">
+                <img src="./img/dichvutt.jpg" alt="">
+            </div>
+            <div class="content__left--from">
+                <form name="frmBieuQuyet">
+                    <table>
+                        <tr>
+                            <td class="form__title">
+                                Thông tin bạn quan tâm là:
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="form__input">
+                                <input type="radio" name="bieuQuyet" value="Mục thông tin thống kê">
+                                Mục thông tin thống kê
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="form__input">
+                                <input type="radio" name="bieuQuyet" value="Niên giám thống kê">
+                                Niên giám thống kê
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="form__input">
+                                <input type="radio" name="bieuQuyet" value="Tin tức - sự kiện ngành thống kê">
+                                Tin tức - sự kiện ngành thống kê
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="form__input">
+                                <input type="radio" name="bieuQuyet" value="Kết quả điều tra">
+                                Kết quả điều tra
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="form__input">
+                                <input type="radio" name="bieuQuyet" value="Khác">
+                                Khác
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="button" value="Biểu quyết" onclick="bq()">
+                                <input type="button" value="Xem kết quả" onclick="xkq()">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+        <!-- content-left -->
+        <!-- content-center -->
+        <div class="content__center--page">
+            <div class="content__center--page-form">
+                <h2>THƯ ĐÓNG GÓP Ý KIẾN</h2>
+                <form name="frmYKien">
+                    <table>
+                        <tr>
+                            <td class="form__title">
+                                Họ tên
+                            </td>
+                            <td class="form__input">
+                                <input type="text" name="hoTen" placeholder="Nhập họ tên">
+                            </td>
+                            <td class="form__title">
+                                Tuổi
+                            </td>
+                            <td class="form__input">
+                                <input type="number" name="tuoi" placeholder="Nhập tuổi" style="width: 5rem;">
+                            </td>
+                            <td class="form__title">
+                                Giới tính
+                            </td>
+                            <td class="form__input">
+                                <select name="gioiTinh">
+                                    <option value="chon" selected>Chọn giới tính</option>
+                                    <option value="Nam">Nam</option>
+                                    <option value="Nữ">Nữ</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="form__title">
+                                Địa chỉ
+                            </td>
+                            <td class="form__input">
+                                <input type="text" name="diaChi" placeholder="Nhập Địa chỉ">
+                            </td>
+                            <td class="form__title" colspan="2" style="text-align: right;">
+                                Tỉnh
+                            </td>
+                            <td class="form__input" colspan="2">
+                                <select name="tinh">
+                                    <option value="chon" selected>Chọn giới tính</option>
+                                    <option value="Long An">Long An</option>
+                                    <option value="Hồ Chí Minh">Hồ Chí Minh</option>
+                                    <option value="Tiền Giang">Tiền Giang</option>
+                                    <option value="Bình Thuận">Bình Thuận</option>
+                                    <option value="Cam Ranh">Cam Ranh</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="form__title">
+                                Sở thích
+                            </td>
+                            <td class="form__input" colspan="5" style="text-align: center;">
+                                <input type="checkbox" name="soThich" id="st" value="Du lịch">Du lịch
+                                <input type="checkbox" name="soThich" id="st" value="Thể thao">Thể thao
+                                <input type="checkbox" name="soThich" id="st" value="Điện ảnh">Điện ảnh
+                                <input type="checkbox" name="soThich" id="st" value="Khác">Khác
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="form__title">
+                                Nội dung
+                            </td>
+                            <td class="form__input" colspan="5">
+                                <textarea name="noiDung" placeholder="Nhập nội dung"
+                                    style="width: 100%;height: 5rem;"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="6" style="text-align: center;">
+                                <input onclick="kiemTra()" type="button" value="Gửi thông tin"
+                                    style="width: 5.5rem;height: 1.5rem;">
+                                <input type="reset" value="Bỏ qua" style="width: 5.5rem;height: 1.5rem;">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="6" style="padding: 1rem;">
+                                Xin chân thành cám ơn ý kiến đóng góp của Quý vị và các bạn!
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+        <!-- content-center -->
+        <!-- content__right -->
+        <div class="content__right">
+            <div class="content__right--img">
+                <img style="height: 102px;" src="./img/chienluoc.jpg" alt="">
+                <img style="height: 325px;" src="./img/luatthongke.jpg" alt="">
+                <img style="height: 100px;" src="./img/kehoach.png" alt="">
+            </div>
+        </div>
+        <!-- content__right -->
+
+
+
+
+    </div>
+    <!-- content -->
+    <!-- footer -->
+    <div class="footer">
+        <div class="footer__title">
+            <h4>TRANG THONG TIN ĐIỆN TỬ CỤC THONG KE TỈNH TIỀN GIANG</h4>
+        </div>
+        <div class="footer__content">
+            <p>21 đuờng 30/4, phưong 1, Thanh phố My Tho, tinh Tien Giang
+                <br>
+                ĐT: 0273. 3872582 - Fax: 0273. 3886 952 - Email:tiengiang@gso.gov.vn
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
